@@ -1,0 +1,80 @@
+    <section class="work-experience">
+            <h1> <span>Experience</span></h1>
+            <br>
+            <div class="wrapper">
+                <div id="progress-bar-container">
+                    <ul>
+                        <li class="step step01 active">
+                  
+                            <div class="step-inner">2014</div>
+                        </li>
+                        <li class="step step02 ">
+                          
+                            <div class="step-inner">2016</div>
+                        </li>
+                        <li class="step step03 ">
+                            <div class="step-inner">2018</div>
+                        </li>
+                        <li class="step step04 ">
+                            <div class="step-inner">2019</div>
+                        </li>
+                        <li class="step step05 ">
+                            <div class="step-inner">2021</div>
+                        </li>
+                    </ul>
+                </div>
+
+
+                <div id="progress-content">
+                    <div class="section-content discovery active">
+                        <h2>NEW JAPAN</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis odio deserunt necessitatibus, aut suscipit ab dicta distinctio nisi in qui itaque quisquam eligendi blanditiis alias error ducimus officia repudiandae atque.</p>
+                    </div>
+                    <div class="section-content seven">
+                        <h2>7-11</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis odio deserunt necessitatibus, aut suscipit ab dicta distinctio nisi in qui itaque quisquam eligendi blanditiis alias error ducimus officia repudiandae atque.</p>
+                    </div>
+                    <div class="section-content emzy">
+                        <h2>EMZY</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis odio deserunt necessitatibus, aut suscipit ab dicta distinctio nisi in qui itaque quisquam eligendi blanditiis alias error ducimus officia repudiandae atque.</p>
+                    </div>
+                    <div class="section-content zukku">
+                        <h2>ZUKKU</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis odio deserunt necessitatibus, aut suscipit ab dicta distinctio nisi in qui itaque quisquam eligendi blanditiis alias error ducimus officia repudiandae atque.</p>
+                    </div>
+                    <div class="section-content te">
+                        <h2>TECH ELEVATOR</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis odio deserunt necessitatibus, aut suscipit ab dicta distinctio nisi in qui itaque quisquam eligendi blanditiis alias error ducimus officia repudiandae atque.</p>
+                    </div>
+                </div>
+            </div>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<script>
+    $(".step").click( function() {
+    $(this).addClass("active").prevAll().addClass("active");
+    $(this).nextAll().removeClass("active");
+});
+$(".step01").click( function() {
+    $("#line-progress").css("width", "3%");
+    $(".discovery").addClass("active").siblings().removeClass("active");
+});
+$(".step02").click( function() {
+    $("#line-progress").css("width", "25%");
+    $(".seven").addClass("active").siblings().removeClass("active");
+});
+$(".step03").click( function() {
+    $("#line-progress").css("width", "50%");
+    $(".emzy").addClass("active").siblings().removeClass("active");
+});
+$(".step04").click( function() {
+    $("#line-progress").css("width", "75%");
+    $(".zukku").addClass("active").siblings().removeClass("active");
+});
+$(".step05").click( function() {
+    $("#line-progress").css("width", "100%");
+    $(".te").addClass("active").siblings().removeClass("active");
+});
+
+</script>
+        </section>

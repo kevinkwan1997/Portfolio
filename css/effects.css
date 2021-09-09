@@ -1,0 +1,129 @@
+html{
+    scroll-behavior: smooth;
+}
+
+.buttons button, .text-btn{
+    border-radius: 40px;
+    background: #f86945;
+    border: 1px solid rgb(219, 140, 140);
+    color: white;
+    width: 100px;
+    height: 40px;       
+    font-size: 1rem;
+    transition: 0.5s all-ease;
+    font-family:'Lato', sans-serif;
+    margin: 10px;
+}
+
+.buttons button:hover{
+    background: rgb(214, 214, 214);
+    color: #D14F3C;
+    cursor: pointer;
+    animation: bounce 1.5s alternate;
+    transition: 0.3s;
+}
+
+.buttons{
+    display: flex;
+    margin-left: -10px;
+    animation: transitionIn 3s;
+    animation-fill-mode: forwards;   
+    margin-top: 20px; 
+
+}
+
+.landing .profile-pic{
+    animation: transitionIn 1s;
+    animation-fill-mode: forwards;
+
+}
+
+.landing .intro h1{
+    animation: transitionIn 1s;
+    animation-fill-mode: forwards;
+
+}
+
+.intro{
+    animation: transitionIn 2s;
+    animation-fill-mode: forwards;
+
+}
+
+
+
+
+
+@keyframes bounce{
+
+    0% {
+        transform: translateY(0);
+    }
+    20%,
+    60%,
+    100% {
+        transform: translateY(1px);
+    }
+    40% {
+        transform: translateY(-5px);
+    }
+    80% {
+        transform: translateY(-3px);
+    }
+}
+
+@keyframes transitionIn{
+    from{ 
+        opacity: 0;
+        transform: rotateX(-10deg);
+    }
+
+    to{
+        opacity: 1;
+        transform: rotateX(0);
+
+    }
+}
+
+@keyframes flicker{
+    0%{
+        opacity: 1;
+    }
+
+    27%{
+        opacity: 1;
+    }
+
+    28%{
+        opacity: 0;
+    }
+    30%{
+        opacity: 1;
+    }
+    31%{
+        opacity: 0;
+    }
+    32%{
+        opacity: 1;
+    }
+
+    61%{
+        opacity: 1;
+    }
+
+    62%{
+        opacity: 0;
+    }
+    63%{
+        opacity: 1;
+    }
+    97%{
+        opacity: 1;
+    }
+    98%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
