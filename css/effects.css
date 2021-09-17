@@ -1,11 +1,6 @@
-html{
-    scroll-behavior: smooth;
-}
 
 .buttons button, .text-btn{
-    border-radius: 40px;
-    background: #f86945;
-    border: 1px solid rgb(219, 140, 140);
+    background: #c54e5e;
     color: white;
     width: 100px;
     height: 40px;       
@@ -16,8 +11,8 @@ html{
 }
 
 .buttons button:hover{
-    background: rgb(214, 214, 214);
-    color: #D14F3C;
+    background: rgb(233, 233, 233);
+    color: #c54e5e;
     cursor: pointer;
     animation: bounce 1.5s alternate;
     transition: 0.3s;

@@ -1,6 +1,3 @@
-html{
-  -webkit-transform: translate3d(0,0,0);
-}
 
 body {
   width: 100vw;
@@ -32,27 +29,35 @@ body .container section:nth-of-type(1) {
   background-color: black;
   background-blend-mode: multiply;
   background-color: #5e5d5d;
-  color: rgb(226, 94, 116);
 
   
 }
 
 body .container section:nth-of-type(2) {
+  background-image: linear-gradient(to top, #888888, #f8f8f8), url(/resources/bgtest2.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
   background-blend-mode: multiply;
-  background-color: #000000;
-  color: lightblue;
+  background-color: #929292;
 }
 body .container section:nth-of-type(3) {
-  background-image: url(/resources/bg3.jpg);
-  color: lightblue;
+  background-image: linear-gradient(to bottom, #eeeeee, #07050f), url(/resources/bgtest2.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
   background-blend-mode: multiply;
-  background-color: #525263;
+  background-color: #949494;
+}
+
+body .container section:nth-of-type(4) {
+  background-image: linear-gradient(to top, rgb(238, 237, 237), rgb(39, 39, 39)),
+  url(/resources/bg5.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-blend-mode: multiply;
+  background-color: #a3a3a3;
 }
 
 ::-webkit-scrollbar {
@@ -100,7 +105,7 @@ section{
 }
 
 .nav ul li:hover{
-  background: #D14F3C;
+  background: #c54e5e ;
 }
 
 .nav ul li a{
@@ -147,7 +152,7 @@ section{
   
 }
 .toggle.active{
-  background: #D14F3C;
+  background: #c54e5e;
   content: '\f057';
 }
 
@@ -183,8 +188,8 @@ body .container section .landing{
   max-width: 60%;
   max-height: 60%;
   border-radius: 100%;
-  border: 5px solid transparent;
-  background: linear-gradient(60deg, #D36E65 10%, rgba(75, 72, 72, 0.829) 100%);
+  border: 2px solid transparent;
+  background: linear-gradient(to right, #da4281 0%, #c54e5e 100%);
 }
 
 .intro{
@@ -192,11 +197,12 @@ body .container section .landing{
   flex-direction: column;
   width: 100%;
   height: 100%;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
   font-size: 50px;
   font-weight: 0 !important;
   font-family: 'Lato', sans-serif;
+  margin-left: -50px;
 }
 
 .aspiring{
@@ -223,7 +229,6 @@ body .container section .landing{
 
 
 
-
 .divide{
   width: 25%;
   justify-content: center;
@@ -231,8 +236,10 @@ body .container section .landing{
   margin-top: -80px;
 }
 
-
-
+.word {
+  border-bottom: 0.2px solid white;
+  padding: 6px;
+}
 
 
 
@@ -250,6 +257,7 @@ body .container section .landing{
 
   .intro{
     align-items: center;
+    margin: 0;
   }
 
   .intro h1{

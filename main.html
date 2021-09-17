@@ -10,10 +10,10 @@
     <link rel="stylesheet" href="css/projects.css" type="text/css">
     <link rel="stylesheet" href="css/effects.css" type="text/css">
     <link rel="stylesheet" href="css/timeline.css" type="text/css">
-    <link rel="stylesheet" href="css/slider.css" tpye="text/css">
+    <link rel="stylesheet" href="css/contact.css" tpye="text/css">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a5060d5ffc.js" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
     <title>Portfolio</title>
 
 </head>
@@ -28,30 +28,27 @@
                 </a>
             </li>
             <li>
-                <a href="#about-me">
-                    <span class="icon"><i class="fas fa-project-diagram"></i></span>
-                    <span class="title">Projects</span>
-                </a>
-            </li>
-            <li>
-                <a href="#">
+                <a href="#project-section">
                     <span class="icon"><i class="fas fa-clipboard-list"></i></span>
                     <span class="title">Work Experience</span>
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="#experience-section">
                     <span class="icon"><i class="fa fa-user" aria-hidden="true"></i></span>
-                    <span class="title">About me</span>
+                    <span class="title">Work History</span>
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="#contact-section">
                     <span class="icon"><i class="far fa-id-card"></i></span>
                     <span class="title">Contact</span>
                 </a>
             </li>
         </ul>
+        <script>
+            
+        </script>
     </div>
 
     <div class="toggle" onclick="toggleMenu()" onblur="clickAway()">
@@ -72,10 +69,10 @@
                 }
             }
         </script>
-    </div>
+</div>
 
     <div class="container">
-        <section class="home" id="home-section">
+    <section class="home" id="home-section">
             <div class="landing">
                 <div class="profile-pic">
                     <img src="/resources/picture.JPG" alt="Picture of me">
@@ -83,7 +80,7 @@
             <div class="intro">
                 <h1>Kevin Kwan</h1>
                     
-                    <span class=flicker-subtext>Aspiring Developer</span>
+                    <span class=flicker-subtext>Academic Fellow</span>
 
                 <div class="buttons">
                     <button>Resume</button>
@@ -93,88 +90,123 @@
                 </div>
             </div>
             </div>
-        </section>
+    </section>
 
-
-
-
-
-        <section class="project-section">
-            <h1 class="project-text"> <span>Projects</span></h1>
+    <section class="project-section" id="project-section">
+            <h1 class="project-text"> <span class="word">Projects</span></h1>
+            <div class="wrapper-wrapper">
             <div class="project-wrapper">
+                
                 <div class="card">
-                    <img src ="resources/vm.jpg">
+                    <img src ="resources/goal.jpg">
                     <div class="info">
-                        <h1>Vending Machine Simulator</h1>
-                        <p>Lorem ipsum dolor sit, <p>
-                        <a href="#" class="btn">Github </a>
+                        <h1>Treatment</h1>
+                        <p>Java, Spring Boot, Spring Data JPA, Hibernate, PostgreSQL, HTML5, CSS3, JavaScript, jQuery, Vue  <p>
 
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <img src ="resources/pw.jpg">
+                    <div class="info">
+                        <h1>Password Manager</h1>
+                        <p>Java, Spring Boot, Spring Data JPA, PostgreSQL, HTML5, CSS3, Vue </p>
+
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <img src ="resources/wc.jpg">
+                    <div class="info">
+                        <h1>Winner's Cup</h1>
+                        <p>Java, Spring Boot, Spring JDBC, PostgreSQL, HTML5, CSS3, JavaScript, jQuery, Vue</p>
                     </div>
                 </div>
 
                 <div class="card">
                     <img src ="resources/tenmo.png">
                     <div class="info">
-                        <h1>Tenmo P2P Transfer Program</h1>
-                        <p>Lorem ipsum dolor sit, </p>
-                        <a href="#" class="btn">Github </a>
+                        <h1>Tenmo</h1>
+                        <p>Java, Spring Boot, Spring JDBC, PostgreSQL </p>
 
                     </div>
                 </div>
 
                 <div class="card">
-                    <img src ="resources/wc.jpg">
+                    <img src ="resources/vm.jpg">
                     <div class="info">
-                        <h1>Winner's Cup Tournament Program</h1>
-                        <p>Lorem ipsum dolor sit, </p>
-                        <a href="#" class="btn">Github </a>
+                        <h1>Vending Machine CLI</h1>
+                        <p>Java<p>
 
                     </div>
                 </div>
 
-                <div class="card">
-                    <img src ="resources/ph1.png">
-                    <div class="info">
-                        <h1>Automatic Bitbucket Repository</h1>
-                        <p>Lorem ipsum dolor sit, </p>
-                        <a href="#" class="btn">Github </a>
 
+            </div>
+        </div>
+    </section>
+
+    <section class="work-experience" id="experience-section">
+            <div class="experience-wrapper">
+                <div id="timeline-wrapper">
+                    <div id="timeline">
+                        <p class="timeline-text">
+                            <span class="timeline-title"> Tech Elevator (Academic Fellow) </span> <br/>
+                            Began work as an Academic Fellow for Tech Elevator, shortly after completing the program. 
+                            Through teaching others, I fully integrated everything the course had to offer, and improved my ability to 
+                            articulate my thoughts into code.
+                        </p>
+                        <p class="timeline-text">
+                            <span class="timeline-title"> Tech Elevator (Student) </span> <br/>
+                            Attended a 14-week coding bootcamp studying web development. 
+                            Learned the fundamentals of programming and the development cycle. 
+                            <br/>
+                            Technologies learned: Java, Spring Boot, JDBC, JPA, REST, PostgreSQL,
+                             HTML, CSS5, JavaScript, Vue, and more 
+                        </p>
+                        <p class="timeline-text">
+                            <span class="timeline-title"> Zukku Sushi</span> <br/>
+                            Began work at Zukku Sushi as a sushi chef, where I solidified my leadership skills
+                            and further honed my communicative and collaborative skills.
+                        </p>
+                        <p class="timeline-text">
+                            <span class="timeline-title"> EMZY Sushi Bar and Kitchen</span> <br/>
+                            Began work in the service industry as an expo. Learned 
+                            the value of teamwork and communication, as well as multitasking ability.
+                        </p>
+                        <p class="timeline-text">
+                             <span class="timeline-title"> UNCC</span>
+                            <br/>Attended UNCC, and briefly studied business and psychology
+                        </p>
                     </div>
                 </div>
-            </div>
-
-        </section>
-
-
-
-
-
-
-
-
-        <section class="work-experience">
-            <h1> <span>Experience</span></h1>
-            <br>
-            <div class="wrapper">
-           
+                <div id="experience-desc">
+                    <h1> <span class="word">Experience</span></h1>
                 </div>
 
             </div>
+    </section>
 
-        </section>
-
-
-
-
-
-
-
-
-
-        <section class="contact">
-            <h1></h1>
-        </section>
-    </div>
+    <section class="contact" id="contact-section">
+      <div id="contact-wrapper">
+          <div id="contact-title">
+                 <h1> <span id="contact">Contact me</span></h1>
+          </div>
+          <div id="form-container">
+            <form action=”mailto:kjkwan@outlook.com”
+            method=”POST”
+            enctype=”multipart/form-data”
+            name=”EmailForm”
+            id="contact-form">
+                <input type="text" class="form-element" size="25" name="sender-name" placeholder="Name" required><br>
+                <input type="text" class="form-element" size="25" name="sender-email" placeholder="E-mail" required><br>
+                <textarea name="msg" placeholder="Message" cols="50" rows="10" id="msg-area" form="contact-form"></textarea>
+                <input type="submit" name="send-email" id="send-btn">
+            </form>
+          </div>
+      </div>
+    </section>
+</div>
     
 </body>
 </html>
