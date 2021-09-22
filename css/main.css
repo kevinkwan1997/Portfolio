@@ -3,9 +3,8 @@ body {
   width: 100vw;
   height: 100vh;
   margin: 0;
-  overflow: hidden;
 }
-::-webkit-scrollbar {
+body::-webkit-scrollbar {
   display: none;
 }
 body .container {
