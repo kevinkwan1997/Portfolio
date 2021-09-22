@@ -59,7 +59,7 @@
     border:1px solid #c54e5e;
 	border-left: 4px solid #c54e5e;
     width: 70%;
-    margin: 1px;
+    margin: 5px
 }
 
 #send-btn {
@@ -82,6 +82,7 @@
 
 #msg-area {
     width: 70%;
+    margin-top: 5px;
 }
 
 @media screen and (max-width: 1080px) {
