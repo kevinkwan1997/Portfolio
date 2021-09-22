@@ -69,10 +69,10 @@
                 }
             }
         </script>
-</div>
+    </div>
 
     <div class="container">
-    <section class="home" id="home-section">
+        <section class="home" id="home-section">
             <div class="landing">
                 <div class="profile-pic">
                     <img src="/resources/picture.JPG" alt="Picture of me">
@@ -83,21 +83,30 @@
                     <span class=flicker-subtext>Academic Fellow</span>
 
                 <div class="buttons">
-                    <button>Resume</button>
-                    <button>Hire Me!</button>
-                    <button>Github</button>
-                    <button>LinkedIn</button>
+                    <a href="https://drive.google.com/uc?export=download&id=1_eShZYQj_MdIzmf_SmXDIc1bMdb0hEON">
+                        <button>Resume</button>
+                    </a>
+                    <a href="#contact-section">
+                        <button>Hire Me!</button>
+                    </a>
+                    <a href="https://github.com/kevinkwan1997">
+                        <button>Github</button>
+                    </a>
+                    <a href="https://www.linkedin.com/in/kevinkwan2/">
+                        <button>LinkedIn</button>
+                    </a>
+
                 </div>
             </div>
             </div>
-    </section>
+        </section>
 
-    <section class="project-section" id="project-section">
+       <section class="project-section" id="project-section">
             <h1 class="project-text"> <span class="word">Projects</span></h1>
             <div class="wrapper-wrapper">
             <div class="project-wrapper">
                 
-                <div class="card">
+                <div class="card" onclick="myhref('https://github.com/kevinkwan1997/Treatment')">
                     <img src ="resources/goal.jpg">
                     <div class="info">
                         <h1>Treatment</h1>
@@ -106,7 +115,7 @@
                     </div>
                 </div>
                 
-                <div class="card">
+                <div class="card" onclick="myhref('https://github.com/kevinkwan1997/PWM')">
                     <img src ="resources/pw.jpg">
                     <div class="info">
                         <h1>Password Manager</h1>
@@ -115,7 +124,7 @@
                     </div>
                 </div>
                 
-                <div class="card">
+                <div class="card" onclick="myhref('https://github.com/kevinkwan1997/WinnersCup')">
                     <img src ="resources/wc.jpg">
                     <div class="info">
                         <h1>Winner's Cup</h1>
@@ -123,7 +132,7 @@
                     </div>
                 </div>
 
-                <div class="card">
+                <div class="card" onclick="myhref('https://github.com/kevinkwan1997/Tenmo')">
                     <img src ="resources/tenmo.png">
                     <div class="info">
                         <h1>Tenmo</h1>
@@ -132,7 +141,7 @@
                     </div>
                 </div>
 
-                <div class="card">
+                <div class="card" onclick="myhref('https://github.com/kevinkwan1997/VMSimulator')">
                     <img src ="resources/vm.jpg">
                     <div class="info">
                         <h1>Vending Machine CLI</h1>
@@ -141,28 +150,32 @@
                     </div>
                 </div>
 
+                <script type="text/javascript">
+                    function myhref(web) {
+                        window.location.href = web;
+                    }
+                </script>
 
             </div>
         </div>
-    </section>
+       </section>
 
-    <section class="work-experience" id="experience-section">
+        <section class="work-experience" id="experience-section">
             <div class="experience-wrapper">
                 <div id="timeline-wrapper">
                     <div id="timeline">
                         <p class="timeline-text">
                             <span class="timeline-title"> Tech Elevator (Academic Fellow) </span> <br/>
-                            Began work as an Academic Fellow for Tech Elevator, shortly after completing the program. 
+                            Began work as an Academic Fellow for Tech Elevator shortly after completing the program. 
                             Through teaching others, I fully integrated everything the course had to offer, and improved my ability to 
                             articulate my thoughts into code.
                         </p>
                         <p class="timeline-text">
                             <span class="timeline-title"> Tech Elevator (Student) </span> <br/>
-                            Attended a 14-week coding bootcamp studying web development. 
-                            Learned the fundamentals of programming and the development cycle. 
+                            Attended a 14-week coding bootcamp studying web development,fundamentals of programming and the development cycle. 
                             <br/>
                             Technologies learned: Java, Spring Boot, JDBC, JPA, REST, PostgreSQL,
-                             HTML, CSS5, JavaScript, Vue, and more 
+                             HTML5, CSS3, JavaScript, Vue, and more 
                         </p>
                         <p class="timeline-text">
                             <span class="timeline-title"> Zukku Sushi</span> <br/>
@@ -185,27 +198,23 @@
                 </div>
 
             </div>
-    </section>
+        </section>
 
-    <section class="contact" id="contact-section">
+        <section class="contact" id="contact-section">
       <div id="contact-wrapper">
           <div id="contact-title">
                  <h1> <span id="contact">Contact me</span></h1>
           </div>
           <div id="form-container">
-            <form action=”mailto:kjkwan@outlook.com”
-            method=”POST”
-            enctype=”multipart/form-data”
-            name=”EmailForm”
-            id="contact-form">
-                <input type="text" class="form-element" size="25" name="sender-name" placeholder="Name" required><br>
-                <input type="text" class="form-element" size="25" name="sender-email" placeholder="E-mail" required><br>
-                <textarea name="msg" placeholder="Message" cols="50" rows="10" id="msg-area" form="contact-form"></textarea>
-                <input type="submit" name="send-email" id="send-btn">
+            <form action=https://formspree.io/f/mayavazz method="POST" id="contact-form">
+                <input type="text" class="form-element" size="25" name="name" placeholder="Name" required><br>
+                <input type="email" class="form-element" size="25" name="_replyto" placeholder="E-mail" required><br>
+                <textarea name="message" placeholder="Message" cols="50" rows="10" name="_subject" id="msg-area" form="contact-form" required></textarea>
+                <button type="submit" name="send-email" id="send-btn"> Send </button>
             </form>
           </div>
       </div>
-    </section>
+        </section>
 </div>
     
 </body>

@@ -181,6 +181,7 @@ body .container section .landing{
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-left: 20px;
 
 }
 
@@ -271,6 +272,7 @@ body .container section .landing{
   .profile-pic{
     align-items: flex-end;
     margin-top: -100px;
+    margin-left: 0;
   }
 
   .landing{
