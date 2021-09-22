@@ -5,6 +5,8 @@
     align-items: center !important;
     height: 100vh;
     overflow: hidden;
+    overflow-y: hidden;
+    overflow-x: hidden;
   
   }
   
