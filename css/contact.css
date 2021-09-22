@@ -59,10 +59,25 @@
     border:1px solid #c54e5e;
 	border-left: 4px solid #c54e5e;
     width: 70%;
+    margin: 1px;
 }
 
 #send-btn {
     margin: 25px;
+    background-color: rgb(80, 80, 80);
+    color: rgb(184, 184, 184);
+    width: 75px;
+    height: 25px
+}
+
+#send-btn:hover {
+    transition: 0.4s ease-out;
+    background-color: white;
+}
+
+#send-btn:active {
+    background-color: rgb(180, 180, 180);
+    transition: none;
 }
 
 #msg-area {
