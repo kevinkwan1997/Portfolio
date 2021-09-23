@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="js/smooth-scroll.js"></script>
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+    <link rel="stylesheet" href="css/projects.css" type="text/css">
+    <link rel="stylesheet" href="css/effects.css" type="text/css">
+    <link rel="stylesheet" href="css/timeline.css" type="text/css">
+    <link rel="stylesheet" href="css/contact.css" tpye="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a5060d5ffc.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+    <title>Portfolio</title>
+
+</head>
+<body>
+
+    <div class="nav">
+        <ul>
+            <li>
+                <a href="#home-section">
+                    <span class="icon"><i class="fas fa-home"></i></span>
+                    <span class="title">Home</span>
+                </a>
+            </li>
+            <li>
+                <a href="#project-section">
+                    <span class="icon"><i class="fas fa-clipboard-list"></i></span>
+                    <span class="title">Work Experience</span>
+                </a>
+            </li>
+            <li>
+                <a href="#experience-section">
+                    <span class="icon"><i class="fa fa-user" aria-hidden="true"></i></span>
+                    <span class="title">Work History</span>
+                </a>
+            </li>
+            <li>
+                <a href="#contact-section">
+                    <span class="icon"><i class="far fa-id-card"></i></span>
+                    <span class="title">Contact</span>
+                </a>
+            </li>
+        </ul>
+        <script>
+            
+        </script>
+    </div>
+
+    <div class="toggle" onclick="toggleMenu()" onblur="clickAway()">
+        <script type="text/javascript">
+            function toggleMenu(){
+                let nav = document.querySelector('.nav');
+                let toggle = document.querySelector('.toggle');
+                nav.classList.toggle('active');
+                toggle.classList.toggle('active');
+            }
+
+            function clickAway(){
+                let nav = document.querySelector('.nav');
+                let toggle = document.querySelector('.toggle');
+                if (nav.classList.contains('toggle')){
+                    nav.classList.toggle('active');
+                    toggle.classList.toggle('active');
+                }
+            }
+        </script>
+    </div>
+
+    <div class="container">
+        <section class="home" id="home-section">
+            <div class="landing">
+                <div class="profile-pic">
+                    <img src="/resources/picture.JPG" alt="Picture of me">
+                </div>
+            <div class="intro">
+                <h1>Kevin Kwan</h1>
+                    
+                    <span class=flicker-subtext>Academic Fellow</span>
+
+                <div class="buttons">
+                    <a href="https://drive.google.com/uc?export=download&id=1_eShZYQj_MdIzmf_SmXDIc1bMdb0hEON">
+                        <button>Resume</button>
+                    </a>
+                    <a href="#contact-section">
+                        <button>Hire Me!</button>
+                    </a>
+                    <a href="https://github.com/kevinkwan1997">
+                        <button>Github</button>
+                    </a>
+                    <a href="https://www.linkedin.com/in/kevinkwan2/">
+                        <button>LinkedIn</button>
+                    </a>
+
+                </div>
+            </div>
+            </div>
+        </section>
+
+       <section class="project-section" id="project-section">
+            <h1 class="project-text"> <span class="word">Projects</span></h1>
+            <div class="wrapper-wrapper">
+            <div class="project-wrapper">
+                
+                <div class="card" onclick="myhref('https://github.com/kevinkwan1997/Treatment')">
+                    <img src ="resources/goal.jpg">
+                    <div class="info">
+                        <h1>Treatment</h1>
+                        <p>Java, Spring Boot, Spring Data JPA, Hibernate, PostgreSQL, HTML5, CSS3, JavaScript, jQuery, Vue  <p>
+
+                    </div>
+                </div>
+                
+                <div class="card" onclick="myhref('https://github.com/kevinkwan1997/PWM')">
+                    <img src ="resources/pw.jpg">
+                    <div class="info">
+                        <h1>Password Manager</h1>
+                        <p>Java, Spring Boot, Spring Data JPA, PostgreSQL, HTML5, CSS3, Vue </p>
+
+                    </div>
+                </div>
+                
+                <div class="card" onclick="myhref('https://github.com/kevinkwan1997/WinnersCup')">
+                    <img src ="resources/wc.jpg">
+                    <div class="info">
+                        <h1>Winner's Cup</h1>
+                        <p>Java, Spring Boot, Spring JDBC, PostgreSQL, HTML5, CSS3, JavaScript, jQuery, Vue</p>
+                    </div>
+                </div>
+
+                <div class="card" onclick="myhref('https://github.com/kevinkwan1997/Tenmo')">
+                    <img src ="resources/tenmo.png">
+                    <div class="info">
+                        <h1>Tenmo</h1>
+                        <p>Java, Spring Boot, Spring JDBC, PostgreSQL </p>
+
+                    </div>
+                </div>
+
+                <div class="card" onclick="myhref('https://github.com/kevinkwan1997/VMSimulator')">
+                    <img src ="resources/vm.jpg">
+                    <div class="info">
+                        <h1>Vending Machine CLI</h1>
+                        <p>Java<p>
+
+                    </div>
+                </div>
+
+                <script type="text/javascript">
+                    function myhref(web) {
+                        window.location.href = web;
+                    }
+                </script>
+
+            </div>
+        </div>
+       </section>
+
+        <section class="work-experience" id="experience-section">
+            <div class="experience-wrapper">
+                <div id="timeline-wrapper">
+                    <div id="timeline">
+                        <p class="timeline-text">
+                            <span class="timeline-title"> Tech Elevator (Academic Fellow) </span> <br/>
+                            Began work as an Academic Fellow for Tech Elevator shortly after completing the program. 
+                            Through teaching others, I fully integrated everything the course had to offer, and improved my ability to 
+                            articulate my thoughts into code.
+                        </p>
+                        <p class="timeline-text">
+                            <span class="timeline-title"> Tech Elevator (Student) </span> <br/>
+                            Attended a 14-week coding bootcamp studying web development,fundamentals of programming and the development cycle. 
+                            <br/>
+                            Technologies learned: Java, Spring Boot, JDBC, JPA, REST, PostgreSQL,
+                             HTML5, CSS3, JavaScript, Vue, and more 
+                        </p>
+                        <p class="timeline-text">
+                            <span class="timeline-title"> Zukku Sushi</span> <br/>
+                            Began work at Zukku Sushi as a sushi chef, where I solidified my leadership skills
+                            and further honed my communicative and collaborative skills.
+                        </p>
+                        <p class="timeline-text">
+                            <span class="timeline-title"> EMZY Sushi Bar and Kitchen</span> <br/>
+                            Began work in the service industry as an expo. Learned 
+                            the value of teamwork and communication, as well as multitasking ability.
+                        </p>
+                        <p class="timeline-text">
+                             <span class="timeline-title"> UNCC</span>
+                            <br/>Attended UNCC, and briefly studied business and psychology
+                        </p>
+                    </div>
+                </div>
+                <div id="experience-desc">
+                    <h1> <span class="word">Experience</span></h1>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="contact" id="contact-section">
+      <div id="contact-wrapper">
+          <div id="contact-title">
+                 <h1> <span id="contact">Contact me</span></h1>
+          </div>
+          <div id="form-container">
+            <form action=https://formspree.io/f/mayavazz method="POST" id="contact-form">
+                <input type="text" class="form-element" size="25" name="name" placeholder="Name" required><br>
+                <input type="email" class="form-element" size="25" name="_replyto" placeholder="E-mail" required><br>
+                <textarea name="message" placeholder="Message" cols="50" rows="10" name="_subject" id="msg-area" form="contact-form" required></textarea>
+                <button type="submit" name="send-email" id="send-btn"> Send </button>
+            </form>
+          </div>
+      </div>
+        </section>
+</div>
+    
+</body>
+</html>

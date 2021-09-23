@@ -43,6 +43,7 @@ body .container section:nth-of-type(2) {
   background-position: center center;
   background-blend-mode: multiply;
   background-color: #929292;
+  width: 105vw;
 }
 body .container section:nth-of-type(3) {
   background-image: linear-gradient(to bottom, #eeeeee, #07050f), url(/resources/bgtest2.jpg);
@@ -284,6 +285,8 @@ body .container section .landing{
 
   .buttons{
     flex-direction: column;
+    width: 100%;
+    justify-content: center;
   }
 
   .buttons button, .text-btn{

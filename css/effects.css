@@ -24,7 +24,17 @@
     animation: transitionIn 3s;
     animation-fill-mode: forwards;   
     margin-top: 20px; 
+    justify-content: center;
 
+
+}
+
+.buttons a {
+    display: flex;
+    justify-content: center;
+    text-emphasis: none;
+    font-style: none;
+    text-decoration: none;
 }
 
 .landing .profile-pic{
